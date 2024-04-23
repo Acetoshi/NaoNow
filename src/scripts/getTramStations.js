@@ -1,5 +1,4 @@
-async function getTramStops() {
-  console.log("i was imported ok");
+async function getTramStations() {
   const allStations = await fetchAllStations();
 
   const tramStations = allStations.filter((station) => {
@@ -12,7 +11,6 @@ async function getTramStops() {
   });
 
   for (let i = 0; i < tramStations.length; i++) {
-    console.log("tour de boucle ",i)
     const tramStationWithPosition = await fetchPositionByIdentifier(
       tramStations[i].codeLieu
     );
@@ -22,7 +20,6 @@ async function getTramStops() {
     };
   }
 
-  console.log(tramStations)
   return tramStations;
 }
 
@@ -70,4 +67,4 @@ async function fetchPositionByIdentifier(id) {
     });
 }
 
-export default getTramStops;
+export default getTramStations;

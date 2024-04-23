@@ -1,17 +1,16 @@
 import { useState, useEffect } from "react";
-import { MapContainer, TileLayer, Popup, Marker, useMap } from "react-leaflet";
+import { MapContainer, TileLayer } from "react-leaflet";
 import "./App.css";
-import getTramStops from "./scripts/getTramStops";
+import getTramStations from "./scripts/getTramStations";
+import TramStation from "./Components/TramStation";
 
 function App() {
-  const [tramLines, setTramLines] = useState([]);
-  const [stops, setStops] = useState([]);
-  const [tramStops, setTramStops] = useState([]);
+  const [tramStations, setTramStations] = useState([]);
 
   useEffect(() => {
     async function fetchData() {
-      const stations = await getTramStops();
-      setTramStops(stations);
+      const stations = await getTramStations();
+      setTramStations(stations);
     }
     fetchData();
   }, []); // Empty dependency array to run effect only once
@@ -24,10 +23,9 @@ function App() {
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
 
-        {tramStops.length && tramStops.map((stop) => (
-          <Marker position={[stop.position.lat, stop.position.lon]}>
-            <Popup>Pascal {stop.libelle}</Popup>
-          </Marker>
+        {tramStations.length && tramStations.map((station) => (
+          <TramStation station={station}/>
+
         ))}
         ;
       </MapContainer>
