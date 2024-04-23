@@ -1,7 +1,13 @@
 async function getStationWaitTime(id) {
-  const returnValue = await fetch(
-    `https://open.tan.fr/ewp/tempsattente.json/${id}`
-  )
+  const waitTime = await fetchStationWaitTime(id)
+
+  console.log(waitTime)
+
+  return waitTime;
+}
+
+async function fetchStationWaitTime(id) {
+  return fetch(`https://open.tan.fr/ewp/tempsattente.json/${id}`)
     .then((response) => {
       if (!response.ok) {
         throw new Error("Network response was not ok");
@@ -19,8 +25,6 @@ async function getStationWaitTime(id) {
       );
       throw error;
     });
-
-  return returnValue;
 }
 
 export default getStationWaitTime;
