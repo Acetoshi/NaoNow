@@ -5,7 +5,11 @@ function getNextTrams(id, setState) {
     .get(`https://open.tan.fr/ewp/tempsattente.json/${id}`)
     .then((response) => {
       const nextTrams = response.data.filter(
-        (tram) => tram.tempsReel && tram.ligne.typeLigne == 1
+        (tram) =>
+          tram.tempsReel &&
+          (tram.ligne.numLigne === "1" ||
+            tram.ligne.numLigne === "2" ||
+            tram.ligne.numLigne === "3")
       );
       nextTrams.sort((tramA, tramB) =>
         tramA.sens - tramB.sens > 0 ? true : false

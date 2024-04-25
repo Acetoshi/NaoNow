@@ -1,0 +1,1011 @@
+[
+  {
+    "codeLieu": "ADEL",
+    "libelle": "Aimé Delrue",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "2" },
+      { "numLigne": "3" },
+      { "numLigne": "3B" },
+      { "numLigne": "LC" }
+    ],
+    "position": { "lon": -1.55009787, "lat": 47.20899731 }
+  },
+  {
+    "codeLieu": "BALI",
+    "libelle": "Balinière",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "2" },
+      { "numLigne": "3" },
+      { "numLigne": "38" },
+      { "numLigne": "3B" }
+    ],
+    "position": { "lon": -1.55397615, "lat": 47.18598939 }
+  },
+  {
+    "codeLieu": "BDOU",
+    "libelle": "Bd de Doulon",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "1" },
+      { "numLigne": "10" },
+      { "numLigne": "1B" },
+      { "numLigne": "C3" }
+    ],
+    "position": { "lon": -1.52013619, "lat": 47.22423423 }
+  },
+  {
+    "codeLieu": "BJOI",
+    "libelle": "Beaujoire",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "1" },
+      { "numLigne": "115" },
+      { "numLigne": "1B" },
+      { "numLigne": "75" },
+      { "numLigne": "C6" },
+      { "numLigne": "LC" }
+    ],
+    "position": { "lon": -1.52421546, "lat": 47.25877238 }
+  },
+  {
+    "codeLieu": "BLVU",
+    "libelle": "Mendès-France-Bellevue",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "1" },
+      { "numLigne": "131" },
+      { "numLigne": "1B" },
+      { "numLigne": "23" },
+      { "numLigne": "40" },
+      { "numLigne": "59" },
+      { "numLigne": "81" },
+      { "numLigne": "91" },
+      { "numLigne": "C20" }
+    ],
+    "position": { "lon": -1.61128702, "lat": 47.20889862 }
+  },
+  {
+    "codeLieu": "BNON",
+    "libelle": "Bignon",
+    "distance": null,
+    "ligne": [{ "numLigne": "3" }, { "numLigne": "3B" }],
+    "position": { "lon": -1.59771985, "lat": 47.24908296 }
+  },
+  {
+    "codeLieu": "BOFA",
+    "libelle": "Bouffay",
+    "distance": null,
+    "ligne": [{ "numLigne": "1" }],
+    "position": { "lon": -1.55274419, "lat": 47.21449215 }
+  },
+  {
+    "codeLieu": "BOGE",
+    "libelle": "Bourgeonnière",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "116" },
+      { "numLigne": "2" },
+      { "numLigne": "26" },
+      { "numLigne": "2B" },
+      { "numLigne": "86" }
+    ],
+    "position": { "lon": -1.56122882, "lat": 47.25293409 }
+  },
+  {
+    "codeLieu": "BOSI",
+    "libelle": "Boissière",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "126" },
+      { "numLigne": "2" },
+      { "numLigne": "2B" },
+      { "numLigne": "96" }
+    ],
+    "position": { "lon": -1.56574073, "lat": 47.25494309 }
+  },
+  {
+    "codeLieu": "BRTA",
+    "libelle": "Bretagne",
+    "distance": null,
+    "ligne": [{ "numLigne": "3" }],
+    "position": { "lon": -1.55822138, "lat": 47.21709924 }
+  },
+  {
+    "codeLieu": "BSEJ",
+    "libelle": "Beauséjour",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "12" },
+      { "numLigne": "3" },
+      { "numLigne": "3B" },
+      { "numLigne": "59" },
+      { "numLigne": "79" },
+      { "numLigne": "89" },
+      { "numLigne": "96" },
+      { "numLigne": "C20" },
+      { "numLigne": "LO" }
+    ],
+    "position": { "lon": -1.58605673, "lat": 47.23795164 }
+  },
+  {
+    "codeLieu": "CDAN",
+    "libelle": "Chêne des Anglais",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "126" },
+      { "numLigne": "2" },
+      { "numLigne": "2B" },
+      { "numLigne": "96" },
+      { "numLigne": "C2" }
+    ],
+    "position": { "lon": -1.57362988, "lat": 47.26152094 }
+  },
+  {
+    "codeLieu": "CNAV",
+    "libelle": "Chantiers Navals",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "1" },
+      { "numLigne": "11" },
+      { "numLigne": "1B" },
+      { "numLigne": "23" },
+      { "numLigne": "C1" },
+      { "numLigne": "LO" }
+    ],
+    "position": { "lon": -1.5677981, "lat": 47.20884925 }
+  },
+  {
+    "codeLieu": "COET",
+    "libelle": "Les Couëts",
+    "distance": null,
+    "ligne": [{ "numLigne": "2" }, { "numLigne": "3" }, { "numLigne": "3B" }],
+    "position": { "lon": -1.58674555, "lat": 47.18064454 }
+  },
+  {
+    "codeLieu": "COMM",
+    "libelle": "Commerce",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "1" },
+      { "numLigne": "11" },
+      { "numLigne": "2" },
+      { "numLigne": "23" },
+      { "numLigne": "26" },
+      { "numLigne": "2B" },
+      { "numLigne": "3" },
+      { "numLigne": "3B" },
+      { "numLigne": "54" },
+      { "numLigne": "C1" },
+      { "numLigne": "C2" },
+      { "numLigne": "C3" },
+      { "numLigne": "LC" },
+      { "numLigne": "LN" },
+      { "numLigne": "LO" },
+      { "numLigne": "NA" }
+    ],
+    "position": { "lon": -1.55649624, "lat": 47.21337472 }
+  },
+  {
+    "codeLieu": "CREZ",
+    "libelle": "Château de Rezé",
+    "distance": null,
+    "ligne": [{ "numLigne": "2" }, { "numLigne": "3" }, { "numLigne": "3B" }],
+    "position": { "lon": -1.559703, "lat": 47.18480505 }
+  },
+  {
+    "codeLieu": "CRQU",
+    "libelle": "Place du Cirque",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "11" },
+      { "numLigne": "2" },
+      { "numLigne": "23" },
+      { "numLigne": "2B" },
+      { "numLigne": "3B" },
+      { "numLigne": "C1" },
+      { "numLigne": "C2" },
+      { "numLigne": "C6" },
+      { "numLigne": "LC" },
+      { "numLigne": "LN" },
+      { "numLigne": "LO" }
+    ],
+    "position": { "lon": -1.55683362, "lat": 47.21692096 }
+  },
+  {
+    "codeLieu": "DCAN",
+    "libelle": "Duchesse Anne-Château",
+    "distance": null,
+    "ligne": [{ "numLigne": "1" }, { "numLigne": "1B" }, { "numLigne": "4" }],
+    "position": { "lon": -1.54744873, "lat": 47.21620187 }
+  },
+  {
+    "codeLieu": "DCFF",
+    "libelle": "Du Chaffault",
+    "distance": null,
+    "ligne": [{ "numLigne": "1" }, { "numLigne": "1B" }],
+    "position": { "lon": -1.58198473, "lat": 47.20764712 }
+  },
+  {
+    "codeLieu": "DIDE",
+    "libelle": "Espace Diderot",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "2" },
+      { "numLigne": "3" },
+      { "numLigne": "30" },
+      { "numLigne": "33" },
+      { "numLigne": "3B" },
+      { "numLigne": "LS" }
+    ],
+    "position": { "lon": -1.56285281, "lat": 47.18451832 }
+  },
+  {
+    "codeLieu": "ECSU",
+    "libelle": "Ecole Centrale-Audencia",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "2" },
+      { "numLigne": "2B" },
+      { "numLigne": "66" },
+      { "numLigne": "75" },
+      { "numLigne": "80" },
+      { "numLigne": "C20" },
+      { "numLigne": "E5" }
+    ],
+    "position": { "lon": -1.55161943, "lat": 47.24812474 }
+  },
+  {
+    "codeLieu": "EGLI",
+    "libelle": "Egalité",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "1" },
+      { "numLigne": "10" },
+      { "numLigne": "11" },
+      { "numLigne": "1B" },
+      { "numLigne": "81" },
+      { "numLigne": "C20" },
+      { "numLigne": "LO" }
+    ],
+    "position": { "lon": -1.58885365, "lat": 47.20939483 }
+  },
+  {
+    "codeLieu": "FACU",
+    "libelle": "Facultés",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "2" },
+      { "numLigne": "2B" },
+      { "numLigne": "75" },
+      { "numLigne": "C20" },
+      { "numLigne": "LC" },
+      { "numLigne": "LN" }
+    ],
+    "position": { "lon": -1.55536079, "lat": 47.24682767 }
+  },
+  {
+    "codeLieu": "FERI",
+    "libelle": "Ferrière",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "109" },
+      { "numLigne": "3" },
+      { "numLigne": "3B" },
+      { "numLigne": "79" }
+    ],
+    "position": { "lon": -1.5907663, "lat": 47.24445633 }
+  },
+  {
+    "codeLieu": "FFAU",
+    "libelle": "Félix Faure",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "12" },
+      { "numLigne": "23" },
+      { "numLigne": "26" },
+      { "numLigne": "3" },
+      { "numLigne": "3B" },
+      { "numLigne": "C2" }
+    ],
+    "position": { "lon": -1.56938663, "lat": 47.22698903 }
+  },
+  {
+    "codeLieu": "FMIT",
+    "libelle": "François Mitterrand",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "1" },
+      { "numLigne": "111" },
+      { "numLigne": "1B" },
+      { "numLigne": "50" },
+      { "numLigne": "71" },
+      { "numLigne": "91" },
+      { "numLigne": "93" }
+    ],
+    "position": { "lon": -1.63857119, "lat": 47.22210178 }
+  },
+  {
+    "codeLieu": "FRAC",
+    "libelle": "Frachon",
+    "distance": null,
+    "ligne": [{ "numLigne": "1" }, { "numLigne": "1B" }],
+    "position": { "lon": -1.62076603, "lat": 47.2191117 }
+  },
+  {
+    "codeLieu": "GDOU",
+    "libelle": "Grande Ouche",
+    "distance": null,
+    "ligne": [{ "numLigne": "2" }, { "numLigne": "3" }, { "numLigne": "3B" }],
+    "position": { "lon": -1.57966252, "lat": 47.18133597 }
+  },
+  {
+    "codeLieu": "GMAR",
+    "libelle": "Gare Maritime",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "1" },
+      { "numLigne": "1B" },
+      { "numLigne": "81" },
+      { "numLigne": "C20" },
+      { "numLigne": "E1" },
+      { "numLigne": "LO" },
+      { "numLigne": "N1" }
+    ],
+    "position": { "lon": -1.57334929, "lat": 47.2070398 }
+  },
+  {
+    "codeLieu": "GPRO",
+    "libelle": "Gare de Pont Rousseau",
+    "distance": null,
+    "ligne": [{ "numLigne": "2" }, { "numLigne": "3" }],
+    "position": { "lon": -1.54933848, "lat": 47.19308111 }
+  },
+  {
+    "codeLieu": "GSNO",
+    "libelle": "Gare Nord",
+    "distance": null,
+    "ligne": [{ "numLigne": "1" }, { "numLigne": "1B" }],
+    "position": { "lon": -1.54267391, "lat": 47.21780375 }
+  },
+  {
+    "codeLieu": "HALU",
+    "libelle": "Haluchère - Batignolles",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "1" },
+      { "numLigne": "11" },
+      { "numLigne": "187" },
+      { "numLigne": "1B" },
+      { "numLigne": "23" },
+      { "numLigne": "77" },
+      { "numLigne": "80" },
+      { "numLigne": "85" },
+      { "numLigne": "95" },
+      { "numLigne": "C1" },
+      { "numLigne": "LN" }
+    ],
+    "position": { "lon": -1.52244622, "lat": 47.24892458 }
+  },
+  {
+    "codeLieu": "HAVE",
+    "libelle": "Halvêque",
+    "distance": null,
+    "ligne": [{ "numLigne": "1" }, { "numLigne": "1B" }, { "numLigne": "95" }],
+    "position": { "lon": -1.5206545, "lat": 47.25709026 }
+  },
+  {
+    "codeLieu": "HBLI",
+    "libelle": "Hôpital Bellier",
+    "distance": null,
+    "ligne": [{ "numLigne": "1" }, { "numLigne": "1B" }],
+    "position": { "lon": -1.52479552, "lat": 47.22101603 }
+  },
+  {
+    "codeLieu": "HODI",
+    "libelle": "Hôtel Dieu",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "11" },
+      { "numLigne": "1B" },
+      { "numLigne": "2" },
+      { "numLigne": "26" },
+      { "numLigne": "3" },
+      { "numLigne": "3B" },
+      { "numLigne": "54" },
+      { "numLigne": "C2" },
+      { "numLigne": "C3" },
+      { "numLigne": "LC" },
+      { "numLigne": "LS" },
+      { "numLigne": "NA" }
+    ],
+    "position": { "lon": -1.55292423, "lat": 47.21151388 }
+  },
+  {
+    "codeLieu": "JAME",
+    "libelle": "Jamet",
+    "distance": null,
+    "ligne": [{ "numLigne": "1" }, { "numLigne": "1B" }, { "numLigne": "LO" }],
+    "position": { "lon": -1.60251303, "lat": 47.21000952 }
+  },
+  {
+    "codeLieu": "JJNA",
+    "libelle": "Jean Jaurès",
+    "distance": null,
+    "ligne": [{ "numLigne": "3" }, { "numLigne": "3B" }],
+    "position": { "lon": -1.56003382, "lat": 47.21838897 }
+  },
+  {
+    "codeLieu": "JMLI",
+    "libelle": "Jean Moulin",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "1" },
+      { "numLigne": "11" },
+      { "numLigne": "1B" },
+      { "numLigne": "81" },
+      { "numLigne": "C20" }
+    ],
+    "position": { "lon": -1.60055442, "lat": 47.20674389 }
+  },
+  {
+    "codeLieu": "JROS",
+    "libelle": "Jean Rostand",
+    "distance": null,
+    "ligne": [{ "numLigne": "3" }, { "numLigne": "3B" }],
+    "position": { "lon": -1.59364253, "lat": 47.24579942 }
+  },
+  {
+    "codeLieu": "LAUR",
+    "libelle": "Lauriers",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "1" },
+      { "numLigne": "1B" },
+      { "numLigne": "40" },
+      { "numLigne": "C20" }
+    ],
+    "position": { "lon": -1.60517484, "lat": 47.20487459 }
+  },
+  {
+    "codeLieu": "LCAR",
+    "libelle": "Le Cardo",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "109" },
+      { "numLigne": "116" },
+      { "numLigne": "2" },
+      { "numLigne": "2B" },
+      { "numLigne": "50" },
+      { "numLigne": "59" },
+      { "numLigne": "89" },
+      { "numLigne": "C2" }
+    ],
+    "position": { "lon": -1.58435937, "lat": 47.2616971 }
+  },
+  {
+    "codeLieu": "LDRE",
+    "libelle": "Landreau",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "1" },
+      { "numLigne": "137" },
+      { "numLigne": "147" },
+      { "numLigne": "157" },
+      { "numLigne": "87" }
+    ],
+    "position": { "lon": -1.51620851, "lat": 47.2321111 }
+  },
+  {
+    "codeLieu": "LONG",
+    "libelle": "Longchamp",
+    "distance": null,
+    "ligne": [{ "numLigne": "3" }, { "numLigne": "3B" }],
+    "position": { "lon": -1.58212605, "lat": 47.23484287 }
+  },
+  {
+    "codeLieu": "MAI8",
+    "libelle": "8 Mai",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "2" },
+      { "numLigne": "3" },
+      { "numLigne": "38" },
+      { "numLigne": "3B" },
+      { "numLigne": "97" }
+    ],
+    "position": { "lon": -1.55170053, "lat": 47.18921858 }
+  },
+  {
+    "codeLieu": "MDOU",
+    "libelle": "Mairie de Doulon",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "1" },
+      { "numLigne": "12" },
+      { "numLigne": "137" },
+      { "numLigne": "147" },
+      { "numLigne": "157" },
+      { "numLigne": "87" }
+    ],
+    "position": { "lon": -1.51873485, "lat": 47.22680291 }
+  },
+  {
+    "codeLieu": "MDTH",
+    "libelle": "Médiathèque",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "1" },
+      { "numLigne": "11" },
+      { "numLigne": "1B" },
+      { "numLigne": "23" },
+      { "numLigne": "C1" },
+      { "numLigne": "LO" }
+    ],
+    "position": { "lon": -1.5612179, "lat": 47.2110535 }
+  },
+  {
+    "codeLieu": "MGIN",
+    "libelle": "Mangin",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "2" },
+      { "numLigne": "26" },
+      { "numLigne": "3" },
+      { "numLigne": "3B" },
+      { "numLigne": "LC" }
+    ],
+    "position": { "lon": -1.54493569, "lat": 47.20160574 }
+  },
+  {
+    "codeLieu": "MICH",
+    "libelle": "Michelet",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "10" },
+      { "numLigne": "2" },
+      { "numLigne": "23" },
+      { "numLigne": "2B" },
+      { "numLigne": "LC" },
+      { "numLigne": "LN" }
+    ],
+    "position": { "lon": -1.55737362, "lat": 47.23451072 }
+  },
+  {
+    "codeLieu": "MNFA",
+    "libelle": "Manufacture",
+    "distance": null,
+    "ligne": [{ "numLigne": "1" }, { "numLigne": "1B" }],
+    "position": { "lon": -1.53771487, "lat": 47.21869109 }
+  },
+  {
+    "codeLieu": "MORH",
+    "libelle": "Morrhonnière-Petit Port",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "2" },
+      { "numLigne": "26" },
+      { "numLigne": "2B" },
+      { "numLigne": "LC" },
+      { "numLigne": "LN" }
+    ],
+    "position": { "lon": -1.55629426, "lat": 47.24148227 }
+  },
+  {
+    "codeLieu": "MOTE",
+    "libelle": "Motte Rouge",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "12" },
+      { "numLigne": "2" },
+      { "numLigne": "23" },
+      { "numLigne": "2B" },
+      { "numLigne": "C2" },
+      { "numLigne": "LC" },
+      { "numLigne": "LN" }
+    ],
+    "position": { "lon": -1.55338727, "lat": 47.228791 }
+  },
+  {
+    "codeLieu": "MOUT",
+    "libelle": "Moutonnerie",
+    "distance": null,
+    "ligne": [{ "numLigne": "1" }, { "numLigne": "1B" }],
+    "position": { "lon": -1.53341505, "lat": 47.21955608 }
+  },
+  {
+    "codeLieu": "MPAU",
+    "libelle": "Marcel Paul",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "119" },
+      { "numLigne": "159" },
+      { "numLigne": "3" },
+      { "numLigne": "3B" },
+      { "numLigne": "50" },
+      { "numLigne": "54" }
+    ],
+    "position": { "lon": -1.61572851, "lat": 47.24576505 }
+  },
+  {
+    "codeLieu": "NETR",
+    "libelle": "Neustrie",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "2" },
+      { "numLigne": "3" },
+      { "numLigne": "36" },
+      { "numLigne": "3B" },
+      { "numLigne": "40" },
+      { "numLigne": "78" },
+      { "numLigne": "88" },
+      { "numLigne": "98" }
+    ],
+    "position": { "lon": -1.59339984, "lat": 47.17591416 }
+  },
+  {
+    "codeLieu": "NRDA",
+    "libelle": "Neruda",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "1" },
+      { "numLigne": "1B" },
+      { "numLigne": "23" },
+      { "numLigne": "59" }
+    ],
+    "position": { "lon": -1.61392135, "lat": 47.21772527 }
+  },
+  {
+    "codeLieu": "OGVA",
+    "libelle": "Orvault Grand Val",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "109" },
+      { "numLigne": "116" },
+      { "numLigne": "179" },
+      { "numLigne": "2" },
+      { "numLigne": "2B" },
+      { "numLigne": "50" },
+      { "numLigne": "79" },
+      { "numLigne": "89" }
+    ],
+    "position": { "lon": -1.59450834, "lat": 47.26297286 }
+  },
+  {
+    "codeLieu": "OMRL",
+    "libelle": "Orvault Morlière",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "129" },
+      { "numLigne": "139" },
+      { "numLigne": "169" },
+      { "numLigne": "179" },
+      { "numLigne": "189" },
+      { "numLigne": "3" },
+      { "numLigne": "3B" },
+      { "numLigne": "50" },
+      { "numLigne": "69" },
+      { "numLigne": "89" }
+    ],
+    "position": { "lon": -1.6031224, "lat": 47.24700707 }
+  },
+  {
+    "codeLieu": "OTAG",
+    "libelle": "50 Otages",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "12" },
+      { "numLigne": "2" },
+      { "numLigne": "23" },
+      { "numLigne": "2B" },
+      { "numLigne": "3B" },
+      { "numLigne": "C1" },
+      { "numLigne": "C2" },
+      { "numLigne": "C6" },
+      { "numLigne": "LN" },
+      { "numLigne": "LO" }
+    ],
+    "position": { "lon": -1.5555686, "lat": 47.21970172 }
+  },
+  {
+    "codeLieu": "PIRM",
+    "libelle": "Pirmil",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "118" },
+      { "numLigne": "152" },
+      { "numLigne": "162" },
+      { "numLigne": "172" },
+      { "numLigne": "2" },
+      { "numLigne": "27" },
+      { "numLigne": "28" },
+      { "numLigne": "3" },
+      { "numLigne": "36" },
+      { "numLigne": "38" },
+      { "numLigne": "3B" },
+      { "numLigne": "42" },
+      { "numLigne": "C4" },
+      { "numLigne": "C9" },
+      { "numLigne": "E8" }
+    ],
+    "position": { "lon": -1.54268626, "lat": 47.19609738 }
+  },
+  {
+    "codeLieu": "PISE",
+    "libelle": "Pin Sec",
+    "distance": null,
+    "ligne": [{ "numLigne": "1" }, { "numLigne": "11" }],
+    "position": { "lon": -1.51794774, "lat": 47.24340102 }
+  },
+  {
+    "codeLieu": "POIT",
+    "libelle": "Poitou",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "12" },
+      { "numLigne": "3" },
+      { "numLigne": "3B" },
+      { "numLigne": "C2" }
+    ],
+    "position": { "lon": -1.56520707, "lat": 47.22406831 }
+  },
+  {
+    "codeLieu": "PROU",
+    "libelle": "Pont Rousseau Martyrs",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "2" },
+      { "numLigne": "3" },
+      { "numLigne": "38" },
+      { "numLigne": "3B" },
+      { "numLigne": "C4" }
+    ],
+    "position": { "lon": -1.54832452, "lat": 47.19185437 }
+  },
+  {
+    "codeLieu": "PSCE",
+    "libelle": "Plaisance",
+    "distance": null,
+    "ligne": [{ "numLigne": "3" }, { "numLigne": "3B" }],
+    "position": { "lon": -1.59110919, "lat": 47.24012139 }
+  },
+  {
+    "codeLieu": "RAZA",
+    "libelle": "Ranzay",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "1" },
+      { "numLigne": "1B" },
+      { "numLigne": "23" },
+      { "numLigne": "80" },
+      { "numLigne": "C1" },
+      { "numLigne": "C6" },
+      { "numLigne": "LN" }
+    ],
+    "position": { "lon": -1.53070103, "lat": 47.25333138 }
+  },
+  {
+    "codeLieu": "RCAS",
+    "libelle": "René Cassin",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "126" },
+      { "numLigne": "2" },
+      { "numLigne": "2B" },
+      { "numLigne": "50" },
+      { "numLigne": "96" },
+      { "numLigne": "C2" },
+      { "numLigne": "LCO" }
+    ],
+    "position": { "lon": -1.57386649, "lat": 47.2647553 }
+  },
+  {
+    "codeLieu": "RMNE",
+    "libelle": "Romanet",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "1" },
+      { "numLigne": "1B" },
+      { "numLigne": "C20" },
+      { "numLigne": "LO" }
+    ],
+    "position": { "lon": -1.60886215, "lat": 47.21186391 }
+  },
+  {
+    "codeLieu": "RROL",
+    "libelle": "Romain Rolland",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "1" },
+      { "numLigne": "1B" },
+      { "numLigne": "40" },
+      { "numLigne": "C20" }
+    ],
+    "position": { "lon": -1.60994139, "lat": 47.20678303 }
+  },
+  {
+    "codeLieu": "RTSC",
+    "libelle": "Recteur Schmitt",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "116" },
+      { "numLigne": "2" },
+      { "numLigne": "26" },
+      { "numLigne": "2B" },
+      { "numLigne": "66" },
+      { "numLigne": "75" },
+      { "numLigne": "80" },
+      { "numLigne": "86" },
+      { "numLigne": "E5" },
+      { "numLigne": "LC" },
+      { "numLigne": "LN" }
+    ],
+    "position": { "lon": -1.553041, "lat": 47.25312047 }
+  },
+  {
+    "codeLieu": "RVAN",
+    "libelle": "Rond-Point de Vannes",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "10" },
+      { "numLigne": "23" },
+      { "numLigne": "3" },
+      { "numLigne": "3B" }
+    ],
+    "position": { "lon": -1.5728809, "lat": 47.22957259 }
+  },
+  {
+    "codeLieu": "SADU",
+    "libelle": "Santos Dumont",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "126" },
+      { "numLigne": "2" },
+      { "numLigne": "2B" },
+      { "numLigne": "96" }
+    ],
+    "position": { "lon": -1.56672852, "lat": 47.25941297 }
+  },
+  {
+    "codeLieu": "SECH",
+    "libelle": "Schoelcher",
+    "distance": null,
+    "ligne": [{ "numLigne": "1" }, { "numLigne": "1B" }],
+    "position": { "lon": -1.62828372, "lat": 47.22065473 }
+  },
+  {
+    "codeLieu": "SFEL",
+    "libelle": "St-Félix",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "12" },
+      { "numLigne": "2" },
+      { "numLigne": "23" },
+      { "numLigne": "2B" },
+      { "numLigne": "C2" },
+      { "numLigne": "LC" },
+      { "numLigne": "LN" }
+    ],
+    "position": { "lon": -1.55647209, "lat": 47.23120872 }
+  },
+  {
+    "codeLieu": "SILL",
+    "libelle": "Sillon de Bretagne",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "129" },
+      { "numLigne": "159" },
+      { "numLigne": "189" },
+      { "numLigne": "3" },
+      { "numLigne": "3B" },
+      { "numLigne": "50" },
+      { "numLigne": "54" }
+    ],
+    "position": { "lon": -1.60870951, "lat": 47.24564515 }
+  },
+  {
+    "codeLieu": "SMHI",
+    "libelle": "St-Mihiel",
+    "distance": null,
+    "ligne": [{ "numLigne": "2" }],
+    "position": { "lon": -1.55340397, "lat": 47.2235666 }
+  },
+  {
+    "codeLieu": "SOUI",
+    "libelle": "Souillarderie",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "1" },
+      { "numLigne": "187" },
+      { "numLigne": "1B" },
+      { "numLigne": "C7" }
+    ],
+    "position": { "lon": -1.51598259, "lat": 47.23815293 }
+  },
+  {
+    "codeLieu": "STHR",
+    "libelle": "Alexandre Vincent-Ste-Thérèse",
+    "distance": null,
+    "ligne": [{ "numLigne": "3" }, { "numLigne": "3B" }],
+    "position": { "lon": -1.57733827, "lat": 47.23266376 }
+  },
+  {
+    "codeLieu": "TENA",
+    "libelle": "Tertre",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "1" },
+      { "numLigne": "11" },
+      { "numLigne": "1B" },
+      { "numLigne": "C20" },
+      { "numLigne": "LO" }
+    ],
+    "position": { "lon": -1.60828303, "lat": 47.21476597 }
+  },
+  {
+    "codeLieu": "TMLI",
+    "libelle": "Tourmaline",
+    "distance": null,
+    "ligne": [{ "numLigne": "1" }, { "numLigne": "1B" }],
+    "position": { "lon": -1.6329725, "lat": 47.22148411 }
+  },
+  {
+    "codeLieu": "TROC",
+    "libelle": "Trocardière",
+    "distance": null,
+    "ligne": [{ "numLigne": "2" }, { "numLigne": "3" }],
+    "position": { "lon": -1.57028594, "lat": 47.1831856 }
+  },
+  {
+    "codeLieu": "VGAC",
+    "libelle": "Vincent Gâche",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "2" },
+      { "numLigne": "3" },
+      { "numLigne": "3B" },
+      { "numLigne": "5" },
+      { "numLigne": "LC" }
+    ],
+    "position": { "lon": -1.54818815, "lat": 47.20635971 }
+  },
+  {
+    "codeLieu": "VIAR",
+    "libelle": "Viarme-Talensac",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "12" },
+      { "numLigne": "3" },
+      { "numLigne": "3B" },
+      { "numLigne": "C2" }
+    ],
+    "position": { "lon": -1.56261703, "lat": 47.22118375 }
+  },
+  {
+    "codeLieu": "WATT",
+    "libelle": "Wattignies",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "2" },
+      { "numLigne": "3" },
+      { "numLigne": "3B" },
+      { "numLigne": "LC" }
+    ],
+    "position": { "lon": -1.54641697, "lat": 47.20380749 }
+  },
+  {
+    "codeLieu": "XBON",
+    "libelle": "Croix Bonneau",
+    "distance": null,
+    "ligne": [
+      { "numLigne": "1" },
+      { "numLigne": "11" },
+      { "numLigne": "1B" },
+      { "numLigne": "81" },
+      { "numLigne": "C20" },
+      { "numLigne": "LO" }
+    ],
+    "position": { "lon": -1.59574262, "lat": 47.20961029 }
+  }
+]
