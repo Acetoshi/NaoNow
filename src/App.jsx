@@ -2,7 +2,8 @@ import { MapContainer, TileLayer, Polyline } from "react-leaflet";
 import "./App.css";
 import TramStation from "./Components/TramStation";
 import tramStations from "./scripts/tramStations.json";
-import { ligne1, ligne2 } from "./scripts/tramPolylines";
+import TramLine from "./Components/TramLine";
+import tramLines from "./scripts/tramLines.json";
 
 function App() {
   return (
@@ -12,22 +13,24 @@ function App() {
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        <ul>
+
+        <ul className="tram-stations">
           {tramStations.map((station) => (
             <li key={station.codeLieu}>
               <TramStation station={station} />
             </li>
           ))}
         </ul>
-        <Polyline
-          pathOptions={{ color: "#0c9144ff", weight: 16 }}
-          positions={ligne1}
-        />
-        <Polyline
-          pathOptions={{ color: "#0c9144ff", weight: 16 }}
-          positions={ligne2}
-        />
+
+        <ul className="tram-lines">
+          {tramLines.map((tramLine) => (
+            <li key={tramLine.name}>
+              <TramLine tramLine={tramLine} />
+            </li>
+          ))}
+        </ul>
       </MapContainer>
+
       <footer>
         <p>
           Developped by{" "}
