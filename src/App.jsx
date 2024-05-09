@@ -1,20 +1,10 @@
-import { useState, useEffect } from "react";
-import { MapContainer, TileLayer } from "react-leaflet";
+import { MapContainer, TileLayer, Polyline } from "react-leaflet";
 import "./App.css";
-import getTramStations from "./scripts/getTramStations";
 import TramStation from "./Components/TramStation";
+import tramStations from "./scripts/tramStations.json";
+import { ligne1, ligne2 } from "./scripts/tramPolylines";
 
 function App() {
-  const [tramStations, setTramStations] = useState([]);
-
-  useEffect(() => {
-    async function fetchData() {
-      const stations = await getTramStations();
-      setTramStations(stations);
-    }
-    fetchData();
-  }, []); // Empty dependency array to run effect only once
-
   return (
     <>
       <MapContainer center={[47.216671, -1.55]} zoom={14}>
@@ -22,13 +12,37 @@ function App() {
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-
-        {tramStations.length && tramStations.map((station) => (
-          <TramStation station={station}/>
-
-        ))}
-        ;
+        <ul>
+          {tramStations.map((station) => (
+            <li key={station.codeLieu}>
+              <TramStation station={station} />
+            </li>
+          ))}
+        </ul>
+        <Polyline
+          pathOptions={{ color: "#0c9144ff", weight: 16 }}
+          positions={ligne1}
+        />
+        <Polyline
+          pathOptions={{ color: "#0c9144ff", weight: 16 }}
+          positions={ligne2}
+        />
       </MapContainer>
+      <footer>
+        <p>
+          Developped by{" "}
+          <a href="https://fr.linkedin.com/in/davidlegall" target="blank">
+            David LE GALL
+          </a>{" "}
+          using data from{" "}
+          <a
+            href="https://data.nantesmetropole.fr/explore/dataset/244400404_api-temps-reel-tan/information/"
+            target="blank"
+          >
+            Nantes OpenData
+          </a>
+        </p>
+      </footer>
     </>
   );
 }

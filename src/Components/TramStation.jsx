@@ -1,16 +1,7 @@
 import { useState, useEffect } from "react";
 import { Popup, Marker } from "react-leaflet";
 import getNextTrams from "../scripts/getNextTram";
-import L from 'leaflet';
-import line1Icon from '../assets/icons/Line1_Station.png'
-
-
-const iconLine1 = L.icon({
-  iconUrl: line1Icon,
-  iconSize: [32, 32],
-  iconAnchor: [16, 16],
-  popupAnchor: [0, -16],
-});
+import iconSelecter from "../scripts/iconSelecter";
 
 function TramStation({ station }) {
   const [nextTrams, setNextTrams] = useState(null);
@@ -19,25 +10,43 @@ function TramStation({ station }) {
     getNextTrams(station.codeLieu, setNextTrams);
   }, []);
 
-  if (nextTrams) console.log(nextTrams);
+  let ligne = 0;
+  if (
+    station.ligne.some((el) => el.numLigne === "2") &&
+    station.ligne.some((el) => el.numLigne === "3")
+  ) {
+    ligne = 23;
+  } else if (station.ligne.some((el) => el.numLigne === "2")) {
+    ligne = 2;
+  } else if (station.ligne.some((el) => el.numLigne === "3")) {
+    ligne = 3;
+  } else if (station.ligne.some((el) => el.numLigne === "1")) {
+    ligne = 1;
+  }
 
   return (
-    <Marker position={[station.position.lat, station.position.lon]} icon={iconLine1}>
+    <Marker
+      position={[station.position.lat, station.position.lon]}
+      icon={iconSelecter(ligne)}
+      alt={station.libelle}
+    >
       <Popup>
         <h3>{station.libelle}</h3>
-       
+
         {nextTrams ? (
           <ul>
-            {nextTrams.map(tram => {
+            {nextTrams.map((tram, index) => {
               return (
-                <p>{tram.terminus + " : " + tram.temps}</p>
+                <li key={station.codeLieu + index}>
+                  <p>{tram.terminus + " : " + tram.temps}</p>
+                </li>
               );
             })}
           </ul>
         ) : (
           <p>no info to display, press refresh</p>
         )}
-         <button
+        <button
           type="button"
           onClick={() => getNextTrams(station.codeLieu, setNextTrams)}
         >

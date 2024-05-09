@@ -1,1 +1,14 @@
+footer{
+    display: flex;
+    justify-content: center;
+    padding:8px;
+}
 
+a {
+    text-decoration:none;
+    color:#0c9144ff;
+}
+
+a:hover{
+    color:#0c914499;
+}
