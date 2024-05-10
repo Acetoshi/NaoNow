@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
-import { Popup, Marker } from "react-leaflet";
+import { Popup, Marker, useMap } from "react-leaflet";
 import getNextTrams from "../scripts/getNextTram";
 import iconSelecter from "../scripts/iconSelecter";
 
@@ -24,12 +24,20 @@ function TramStation({ station }) {
   } else if (station.ligne.some((el) => el.numLigne === "1")) {
     ligne = 1;
   }
+  const map = useMap();
+  function zoomOnStation() {
+    map.setView([station.position.lat, station.position.lon], 16);
+    getNextTrams(station.codeLieu, setNextTrams);
+  }
 
   return (
     <Marker
       position={[station.position.lat, station.position.lon]}
       icon={iconSelecter(ligne)}
       alt={station.libelle}
+      eventHandlers={{
+        click: zoomOnStation,
+      }}
     >
       <Popup>
         <h3>{station.libelle}</h3>

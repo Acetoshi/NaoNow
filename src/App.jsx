@@ -3,11 +3,14 @@ import "./App.css";
 import TramStation from "./Components/TramStation";
 import tramStations from "./scripts/tramStations.json";
 import TramLine from "./Components/TramLine";
+import SearchBar from "./Components/SearchBar";
 import tramLines from "./scripts/tramLines.json";
 
 function App() {
   return (
     <>
+      <SearchBar tramStations={tramStations} />
+      
       <MapContainer center={[47.216671, -1.55]} zoom={14}>
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
