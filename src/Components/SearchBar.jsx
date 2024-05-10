@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PropTypes from "prop-types";
 
 function SearchBar({ tramStations }) {
   const [search, setSearch] = useState("");
@@ -28,7 +29,7 @@ function SearchBar({ tramStations }) {
       ></input>
       <datalist id="suggested-stations">
         {getTramStationsNames().map((stationName) => (
-          <option value={stationName}></option>
+          <option key={stationName} value={stationName}></option>
         ))}
       </datalist>
     </form>
@@ -36,3 +37,7 @@ function SearchBar({ tramStations }) {
 }
 
 export default SearchBar;
+
+SearchBar.propTypes = {
+  tramStations: PropTypes.array.isRequired,
+};
