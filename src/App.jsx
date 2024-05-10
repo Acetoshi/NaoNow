@@ -1,4 +1,4 @@
-import { MapContainer, TileLayer, Polyline } from "react-leaflet";
+import { MapContainer, TileLayer } from "react-leaflet";
 import "./App.css";
 import TramStation from "./Components/TramStation";
 import tramStations from "./scripts/tramStations.json";

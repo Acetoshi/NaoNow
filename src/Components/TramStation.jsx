@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 import { Popup, Marker } from "react-leaflet";
 import getNextTrams from "../scripts/getNextTram";
 import iconSelecter from "../scripts/iconSelecter";
@@ -58,3 +59,5 @@ function TramStation({ station }) {
 }
 
 export default TramStation;
+
+TramStation.propTypes = { station: PropTypes.object.isRequired };

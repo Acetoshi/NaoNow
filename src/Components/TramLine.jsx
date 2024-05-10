@@ -1,17 +1,17 @@
 import { Polyline } from "react-leaflet";
+import PropTypes from "prop-types";
 import invertLatLon from "../scripts/invertLatLon";
 
 function TramLine({ tramLine }) {
-
-function getColor(){
- if (tramLine.name.includes("1")){
-    return "#0c9144ff"
- } else if (tramLine.name.includes("2")){
-    return "#d41f2eff"
- } else if (tramLine.name.includes("3")){
-    return "#136ba8ff"
- } 
-}
+  function getColor() {
+    if (tramLine.name.includes("1")) {
+      return "#0c9144ff";
+    } else if (tramLine.name.includes("2")) {
+      return "#d41f2eff";
+    } else if (tramLine.name.includes("3")) {
+      return "#136ba8ff";
+    }
+  }
 
   return (
     <Polyline
@@ -20,5 +20,9 @@ function getColor(){
     />
   );
 }
+
+TramLine.propTypes = {
+  tramLine: PropTypes.object.isRequired,
+};
 
 export default TramLine;
