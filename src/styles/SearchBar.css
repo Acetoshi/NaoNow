@@ -1,4 +1,13 @@
 .search-container {
-    position: relative;
-    z-index: 2000;
+  position: relative;
+  top: 16px;
+  z-index: 2000;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+
+  & input {
+    padding: 8px;
+    border-radius: 32px;
+  }
 }
