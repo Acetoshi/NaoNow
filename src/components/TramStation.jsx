@@ -1,15 +1,10 @@
-import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
-import { Popup, Marker, useMap } from "react-leaflet";
-import getNextTrams from "../scripts/getNextTram";
+import { Marker, useMap, Tooltip } from "react-leaflet";
+import { useTrams } from "../contexts/TramsProvider";
 import iconSelecter from "../scripts/iconSelecter";
 
 function TramStation({ station }) {
-  const [nextTrams, setNextTrams] = useState(null);
-
-  useEffect(() => {
-    getNextTrams(station.codeLieu, setNextTrams);
-  }, []);
+  const { setSelectedStation, setPanelIsDisplayed } = useTrams();
 
   let ligne = 0;
   if (
@@ -27,7 +22,8 @@ function TramStation({ station }) {
   const map = useMap();
   function zoomOnStation() {
     map.setView([station.position.lat, station.position.lon], 16);
-    getNextTrams(station.codeLieu, setNextTrams);
+    setSelectedStation(station);
+    setPanelIsDisplayed(true);
   }
 
   return (
@@ -39,29 +35,9 @@ function TramStation({ station }) {
         click: zoomOnStation,
       }}
     >
-      <Popup>
-        <h3>{station.libelle}</h3>
-
-        {nextTrams ? (
-          <ul>
-            {nextTrams.map((tram, index) => {
-              return (
-                <li key={station.codeLieu + index}>
-                  <p>{tram.terminus + " : " + tram.temps}</p>
-                </li>
-              );
-            })}
-          </ul>
-        ) : (
-          <p>no info to display, press refresh</p>
-        )}
-        <button
-          type="button"
-          onClick={() => getNextTrams(station.codeLieu, setNextTrams)}
-        >
-          refresh
-        </button>
-      </Popup>
+      <Tooltip direction="top" offset={[0, -16]}>
+        {station.libelle}
+      </Tooltip>
     </Marker>
   );
 }

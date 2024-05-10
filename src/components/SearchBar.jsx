@@ -1,18 +1,25 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { useMap } from "react-leaflet";
-import PropTypes from "prop-types";
 import "../styles/SearchBar.css";
+import { useTrams } from "../contexts/TramsProvider";
 
-function SearchBar({ tramStations }) {
-  const [search, setSearch] = useState("");
+function SearchBar() {
+  const {
+    tramStations,
+    search,
+    setSearch,
+    setSelectedStation,
+    setPanelIsDisplayed,
+  } = useTrams();
+
   const foundStations = tramStations.filter((station) =>
     removeAccents(station.libelle.toLowerCase()).includes(search.toLowerCase())
   );
 
   // this function comes from here : https://www.30secondsofcode.org/js/s/remove-accents/
- function removeAccents(string){ return string.normalize('NFD').replace(/[\u0300-\u036f]/g, '');}
-    
-
+  function removeAccents(string) {
+    return string.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  }
 
   function handleChange(event) {
     setSearch(event.target.value);
@@ -25,6 +32,8 @@ function SearchBar({ tramStations }) {
         [foundStations[0].position.lat, foundStations[0].position.lon],
         16
       );
+      setSelectedStation(() => foundStations[0]);
+      setPanelIsDisplayed(() => true);
     }
   }, [search]);
 
@@ -54,7 +63,3 @@ function SearchBar({ tramStations }) {
 }
 
 export default SearchBar;
-
-SearchBar.propTypes = {
-  tramStations: PropTypes.array.isRequired,
-};

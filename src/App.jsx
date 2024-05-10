@@ -1,37 +1,47 @@
 import { MapContainer, TileLayer } from "react-leaflet";
-import "./styles/App.css";
-import TramStation from "./Components/TramStation";
-import tramStations from "./scripts/tramStations.json";
-import TramLine from "./Components/TramLine";
-import SearchBar from "./Components/SearchBar";
+import { useState } from "react";
+
+import TramStation from "./components/TramStation";
+import InfoPanel from "./components/InfoPanel";
+import TramLine from "./components/TramLine";
+import SearchBar from "./components/SearchBar";
+
 import tramLines from "./scripts/tramLines.json";
+import tramStations from "./scripts/tramStations.json";
+
+import "./styles/App.css";
+import TramsProvider from "./contexts/TramsProvider";
 
 function App() {
   return (
     <>
       <MapContainer center={[47.216671, -1.55]} zoom={14}>
-        <SearchBar tramStations={tramStations} />
+        <TramsProvider>
+          <SearchBar />
 
-        <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        />
+          <InfoPanel />
 
-        <ul className="tram-stations">
-          {tramStations.map((station) => (
-            <li key={station.codeLieu}>
-              <TramStation station={station} />
-            </li>
-          ))}
-        </ul>
+          <TileLayer
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          />
 
-        <ul className="tram-lines">
-          {tramLines.map((tramLine) => (
-            <li key={tramLine.name}>
-              <TramLine tramLine={tramLine} />
-            </li>
-          ))}
-        </ul>
+          <ul className="tram-stations">
+            {tramStations.map((station) => (
+              <li key={station.codeLieu}>
+                <TramStation station={station} />
+              </li>
+            ))}
+          </ul>
+
+          <ul className="tram-lines">
+            {tramLines.map((tramLine) => (
+              <li key={tramLine.name}>
+                <TramLine tramLine={tramLine} />
+              </li>
+            ))}
+          </ul>
+        </TramsProvider>
       </MapContainer>
 
       <footer>

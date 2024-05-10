@@ -1,6 +1,7 @@
 [
   {
     "name": "1 François Mitterrand → Beaujoire",
+    "color":"#0c9144ff",
     "polylines": [
       [
         [-1.6382404, 47.2220783],
@@ -671,6 +672,7 @@
   },
   {
     "name": "1 Beaujoire → François Mitterrand",
+    "color":"#0c9144ff",
     "polylines": [
       [
         [-1.5259974, 47.2587969],
@@ -1393,6 +1395,7 @@
   },
   {
     "name": "1 Jamet → Beaujoire",
+    "color":"#0c9144ff",
     "polylines": [
       [
         [-1.6030623, 47.2100469],
@@ -1892,6 +1895,7 @@
   },
   {
     "name": "1 Beaujoire → Jamet",
+    "color":"#0c9144ff",
     "polylines": [
       [
         [-1.5259974, 47.2587969],
@@ -2427,6 +2431,7 @@
   },
   {
     "name": "1 Jamet → Ranzay",
+    "color":"#0c9144ff",
     "polylines": [[
       [-1.6030623, 47.2100469],
       [-1.6024315, 47.2099765],
@@ -2863,6 +2868,7 @@
   },
   {
     "name": "1 Ranzay → Jamet",
+    "color":"#0c9144ff",
     "polylines": [[
       [-1.530767, 47.2533593],
       [-1.5307449, 47.2533531],
@@ -3315,6 +3321,7 @@
   },
   {
     "name": "2 Orvault Grand Val → Gare de Pont-Rousseau",
+    "color":"#d41f2eff",
     "polylines": [
       [
         [-1.5490852, 47.1929782],
@@ -4099,6 +4106,7 @@
   },
   {
     "name": "2 Gare de Pont-Rousseau → Orvault Grand Val",
+    "color":"#d41f2eff",
     "polylines": [
       [
         [-1.5490852, 47.1929782],
@@ -4899,6 +4907,7 @@
   },
   {
     "name": "3 Neustrie → Marcel Paul",
+    "color":"#136ba8ff",
     "polylines": [[
       [-1.5927654, 47.1772626],
       [-1.5923238, 47.1774154],
@@ -5900,6 +5909,7 @@
   },
   {
     "name": "3 Marcel Paul → Neustrie",
+    "color":"#136ba8ff",
     "polylines": [
       [
         [-1.616657, 47.2460301],
