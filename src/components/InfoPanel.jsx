@@ -11,26 +11,37 @@ function InfoPanel() {
     selectedStation && getNextTrams(selectedStation.codeLieu, setNextTrams);
   }, [selectedStation]);
 
+  console.log(nextTrams);
+
   return (
     <section className={panelIsDisplayed ? "info-panel" : "info-panel hidden"}>
       <section>
-        <h3>
-          {selectedStation
-            ? selectedStation.libelle
-            : "selectionnez une station"}
-        </h3>
+        <hgroup>
+          <h3>
+            {selectedStation
+              ? selectedStation.libelle
+              : "selectionnez une station"}
+          </h3>
 
-        <button
-          type="button"
-          onClick={() => getNextTrams(selectedStation.codeLieu, setNextTrams)}
-        >rafraîchir</button>
+          <button
+            type="button"
+            onClick={() => getNextTrams(selectedStation.codeLieu, setNextTrams)}
+          >
+            rafraîchir
+          </button>
+        </hgroup>
 
         {nextTrams ? (
           <ul>
             {nextTrams.map((tram, index) => {
               return (
                 <li key={selectedStation.codeLieu + index}>
-                  <p>{tram.terminus + " : " + tram.temps}</p>
+                  <p>
+                    <strong
+                      className={`ligne-${tram.ligne.numLigne}`}
+                    >{`Ligne ${tram.ligne.numLigne} > ${tram.terminus}`}</strong>
+                    {` tram dans ${tram.temps}`}
+                  </p>
                 </li>
               );
             })}

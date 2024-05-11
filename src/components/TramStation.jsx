@@ -4,8 +4,10 @@ import { useTrams } from "../contexts/TramsProvider";
 import iconSelecter from "../scripts/iconSelecter";
 
 function TramStation({ station }) {
-  const { setSelectedStation, setPanelIsDisplayed } = useTrams();
+  const { selectedStation, setSelectedStation, setPanelIsDisplayed } =
+    useTrams();
 
+    //this could be refactored.
   let ligne = 0;
   if (
     station.ligne.some((el) => el.numLigne === "2") &&
@@ -19,12 +21,21 @@ function TramStation({ station }) {
   } else if (station.ligne.some((el) => el.numLigne === "1")) {
     ligne = 1;
   }
+
   const map = useMap();
   function zoomOnStation() {
     map.setView([station.position.lat, station.position.lon], 16);
     setSelectedStation(station);
     setPanelIsDisplayed(true);
+    // console.log("was selected : ", this);
+    // this.Tooltip.openTooltip();
   }
+
+  // TODO : find a way to make the tooltip permanent when station is selected. 
+  // const isSelected = selectedStation.codeLieu === station.codeLieu;
+  // if (isSelected) {
+  //   console.log(isSelected);
+  // }
 
   return (
     <Marker

@@ -4,7 +4,7 @@ import tramStations from "../scripts/tramStations.json";
 const TramsContext = createContext();
 
 function TramsProvider({ children }) {
-  const [panelIsDisplayed, setPanelIsDisplayed] = useState(true);
+  const [panelIsDisplayed, setPanelIsDisplayed] = useState(false);
   const [search, setSearch] = useState("");
   const [selectedStation, setSelectedStation] = useState({});
 

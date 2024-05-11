@@ -1,13 +1,13 @@
 .info-panel {
   position: fixed;
   width: 100vw;
-  z-index: 400;
+  z-index: 1001;
   bottom: 0px;
-  height: 20vh;
+  min-height: 20vh;
   color: var(--text-color-dark);
   background-color: var(--background-color-dark);
   transition: 300ms;
-  padding:16px;
+  padding: 16px;
 
   & .close-panel-button {
     cursor: pointer;
@@ -16,19 +16,55 @@
     right: 0;
     border: none;
     text-align: center;
-    width: 24px;
-    height: 24px;
-    font: 16px/24px Tahoma, Verdana, sans-serif;
+    width: 32px;
+    height: 32px;
+    font: 24px/32px Tahoma, Verdana, sans-serif;
     color: #757575;
     text-decoration: none;
     background: transparent;
   }
 
+  & hgroup {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+    & button {
+      padding: 2px 8px;
+      height: fit-content;
+    }
+
+    & h3 {
+      font-size: 32px;
+    }
+  }
+
   & ul {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+    & li > p {
+      & strong {
+        color: var(--background-color-dark);
+        padding: 2px 4px;
+        border-radius: 2px;
+      }
+
+      & .ligne-1 {
+        background-color: #0c9144ff;
+      }
+      & .ligne-2 {
+        background-color: #d41f2eff;
+      }
+      & .ligne-3 {
+        background-color: #136ba8ff;
+      }
+    }
   }
 }
 
 .info-panel.hidden {
-  transform: translateY(20vh);
+  transform: translateY(100vh);
 }
