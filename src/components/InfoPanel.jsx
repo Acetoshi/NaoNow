@@ -38,9 +38,9 @@ function InfoPanel() {
                 <li key={selectedStation.codeLieu + index}>
                   <p>
                     <strong
-                      className={`ligne-${tram.ligne.numLigne}`}
+                      className={`ligne-${tram.ligne.numLigne} ligne-terminus-info`}
                     >{`Ligne ${tram.ligne.numLigne} > ${tram.terminus}`}</strong>
-                    {` tram dans ${tram.temps}`}
+                    {tram.temps==="proche"?` tram `:` tram dans `} <strong>{tram.temps}</strong>
                   </p>
                 </li>
               );

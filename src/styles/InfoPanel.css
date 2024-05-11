@@ -46,7 +46,7 @@
     gap: 2px;
 
     & li > p {
-      & strong {
+      & .ligne-terminus-info {
         color: var(--background-color-dark);
         padding: 2px 4px;
         border-radius: 2px;

@@ -6,7 +6,7 @@ function getNextTrams(id, setState) {
     .then((response) => {
       const nextTrams = response.data.filter(
         (tram) =>
-          tram.tempsReel &&
+          (tram.tempsReel==="true") &&
           (tram.ligne.numLigne === "1" ||
             tram.ligne.numLigne === "2" ||
             tram.ligne.numLigne === "3")
