@@ -1,48 +1,18 @@
-import { MapContainer, TileLayer } from "react-leaflet";
-
-import TramStation from "./components/TramStation";
 import InfoPanel from "./components/InfoPanel";
-import TramLine from "./components/TramLine";
+import Map from "./components/Map";
 import SearchBar from "./components/SearchBar";
-
-import tramLines from "./scripts/tramLines.json";
-import tramStations from "./scripts/tramStations.json";
+import TramsProvider from "./contexts/TramsProvider";
 
 import "./styles/App.css";
-import TramsProvider from "./contexts/TramsProvider";
 
 function App() {
   return (
     <>
-      <MapContainer center={[47.216671, -1.55]} zoom={14}>
-        <TramsProvider>
-          <SearchBar />
-
-          <InfoPanel />
-
-          <TileLayer
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          />
-
-          <ul className="tram-stations">
-            {tramStations.map((station) => (
-              <li key={station.codeLieu}>
-                <TramStation station={station} />
-              </li>
-            ))}
-          </ul>
-
-          <ul className="tram-lines">
-            {tramLines.map((tramLine) => (
-              <li key={tramLine.name}>
-                <TramLine tramLine={tramLine} />
-              </li>
-            ))}
-          </ul>
-        </TramsProvider>
-      </MapContainer>
-
+      <TramsProvider>
+        <SearchBar />
+        <Map />
+        <InfoPanel />
+      </TramsProvider>
       <footer>
         <p>
           Developped by{" "}

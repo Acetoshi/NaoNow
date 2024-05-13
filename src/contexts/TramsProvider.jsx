@@ -1,5 +1,6 @@
 import { createContext, useContext, useState } from "react";
 import PropTypes from "prop-types";
+import tramLines from "../scripts/tramLines.json";
 import tramStations from "../scripts/tramStations.json";
 
 const TramsContext = createContext();
@@ -13,6 +14,7 @@ function TramsProvider({ children }) {
     <TramsContext.Provider
       value={{
         tramStations,
+        tramLines,
         search,
         setSearch,
         panelIsDisplayed,
@@ -29,7 +31,7 @@ function TramsProvider({ children }) {
 export const useTrams = () => useContext(TramsContext);
 
 TramsProvider.propTypes = {
-  children: PropTypes.element,
+  children: PropTypes.array,
 };
 
 export default TramsProvider;

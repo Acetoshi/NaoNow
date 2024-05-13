@@ -1,6 +1,6 @@
 // Packages
 import { useState, useEffect } from "react";
-import { useMap } from "react-leaflet";
+// import { useMap } from "react-leaflet";
 import { useTrams } from "../contexts/TramsProvider";
 
 import "../styles/SearchBar.css";
@@ -40,13 +40,8 @@ function SearchBar() {
     setSearch(event.target.value);
   }
 
-  const map = useMap();
   useEffect(() => {
     if (foundStations.length === 1) {
-      map.setView(
-        [foundStations[0].position.lat, foundStations[0].position.lon],
-        16
-      );
       setSelectedStation(() => foundStations[0]);
       setPanelIsDisplayed(() => true);
 
@@ -58,7 +53,7 @@ function SearchBar() {
   return (
     <section
       id="form-wrapper"
-      className={suggestionsIsVisible && "fullscreen"}
+      className={suggestionsIsVisible ? "fullscreen" : undefined}
       onClick={(event) => {
         // this function enables us to collapse the suggestions if the user clicks somewhere else than in the search container
         const searchContainer = document.getElementById("search-container");

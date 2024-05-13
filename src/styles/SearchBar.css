@@ -1,5 +1,5 @@
 #form-wrapper {
-  position: relative;
+  position: fixed;
   top: 0px;
   padding-top: 16px;
   z-index: 2000;
@@ -9,6 +9,7 @@
   justify-content: flex-start;
   align-items: center;
   --input-width: 360px;
+  z-index: 500; /* anything less and the element is under the map */
 
   @media screen and (max-width: 800px) {
     --input-width: 200px;
