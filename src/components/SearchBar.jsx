@@ -56,19 +56,18 @@ function SearchBar() {
   }, [search]);
 
   return (
-    <section id="form-wrapper"
-    className={suggestionsIsVisible && "fullscreen"}
-    onClick={event=>{
-      // this function enables us to collapse the suggestions if the user clicks somewhere else than in the search container
-      const searchContainer=document.getElementById("search-container");
-      if (!searchContainer.contains(event.target)){
-        setSuggestionsIsVisible(() => false);
-      }
-    }}>
-      <form
-        onSubmit={(event) => event.preventDefault()}
-        id="search-container"
-      >
+    <section
+      id="form-wrapper"
+      className={suggestionsIsVisible && "fullscreen"}
+      onClick={(event) => {
+        // this function enables us to collapse the suggestions if the user clicks somewhere else than in the search container
+        const searchContainer = document.getElementById("search-container");
+        if (!searchContainer.contains(event.target)) {
+          setSuggestionsIsVisible(() => false);
+        }
+      }}
+    >
+      <form onSubmit={(event) => event.preventDefault()} id="search-container">
         <input
           type="text"
           placeholder="Station de départ"
@@ -77,7 +76,10 @@ function SearchBar() {
           list="suggested-stations"
           onChange={handleChange}
           value={search}
-          onFocus={() => setSuggestionsIsVisible(() => true)}
+          onFocus={() => {
+            setSuggestionsIsVisible(() => true);
+            setPanelIsDisplayed(() => false);
+          }}
         ></input>
         <ol
           id="suggested-stations"
