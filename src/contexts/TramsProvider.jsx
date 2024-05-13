@@ -1,4 +1,5 @@
 import { createContext, useContext, useState } from "react";
+import PropTypes from "prop-types";
 import tramStations from "../scripts/tramStations.json";
 
 const TramsContext = createContext();
@@ -26,5 +27,9 @@ function TramsProvider({ children }) {
 }
 
 export const useTrams = () => useContext(TramsContext);
+
+TramsProvider.propTypes = {
+  children: PropTypes.element,
+};
 
 export default TramsProvider;

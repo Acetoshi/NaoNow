@@ -11,8 +11,6 @@ function InfoPanel() {
     selectedStation && getNextTrams(selectedStation.codeLieu, setNextTrams);
   }, [selectedStation]);
 
-  console.log(nextTrams);
-
   return (
     <section className={panelIsDisplayed ? "info-panel" : "info-panel hidden"}>
       <section>
@@ -40,7 +38,8 @@ function InfoPanel() {
                     <strong
                       className={`ligne-${tram.ligne.numLigne} ligne-terminus-info`}
                     >{`Ligne ${tram.ligne.numLigne} > ${tram.terminus}`}</strong>
-                    {tram.temps==="proche"?` tram `:` tram dans `} <strong>{tram.temps}</strong>
+                    {tram.temps === "proche" ? ` tram ` : ` tram dans `}{" "}
+                    <strong>{tram.temps}</strong>
                   </p>
                 </li>
               );

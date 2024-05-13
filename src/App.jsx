@@ -1,5 +1,4 @@
 import { MapContainer, TileLayer } from "react-leaflet";
-import { useState } from "react";
 
 import TramStation from "./components/TramStation";
 import InfoPanel from "./components/InfoPanel";
