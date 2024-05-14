@@ -1,10 +1,13 @@
 import { useState, useEffect } from "react";
 import { useTrams } from "../contexts/TramsProvider";
+import { useFavoriteStations } from "../contexts/FavoriteStationsProvider";
 import getNextTrams from "../scripts/getNextTram";
 import "../styles/InfoPanel.css";
 
 function InfoPanel() {
   const { panelIsDisplayed, setPanelIsDisplayed, selectedStation } = useTrams();
+  const { isFavorite, addToFavorites, removeFromFavorites } =
+    useFavoriteStations();
   const [nextTrams, setNextTrams] = useState(null);
 
   useEffect(() => {
@@ -20,6 +23,16 @@ function InfoPanel() {
               ? selectedStation.libelle
               : "selectionnez une station"}
           </h3>
+          <button
+            type="button"
+            onClick={() =>
+              isFavorite(selectedStation)
+                ? removeFromFavorites(selectedStation)
+                : addToFavorites(selectedStation)
+            }
+          >
+            {isFavorite(selectedStation) ? "★" : "☆"}
+          </button>
 
           <button
             type="button"

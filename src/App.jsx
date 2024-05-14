@@ -1,6 +1,7 @@
 import InfoPanel from "./components/InfoPanel";
 import Map from "./components/Map";
 import SearchBar from "./components/SearchBar";
+import FavoriteStationProvider from "./contexts/FavoriteStationsProvider";
 import TramsProvider from "./contexts/TramsProvider";
 
 import "./styles/App.css";
@@ -9,9 +10,11 @@ function App() {
   return (
     <>
       <TramsProvider>
-        <SearchBar />
-        <Map />
-        <InfoPanel />
+        <FavoriteStationProvider>
+          <SearchBar />
+          <Map />
+          <InfoPanel />
+        </FavoriteStationProvider>
       </TramsProvider>
       <footer>
         <p>

@@ -27,6 +27,7 @@
       border: 0px;
       padding: 8px 0px;
       background-color: var(--background-color-dark);
+      font-size: var(--font-size-text);
     }
 
     & ol {
@@ -47,6 +48,7 @@
           cursor: pointer;
           border: 0px;
           background-color: var(--background-color-dark);
+          font-size: var(--font-size-text);
         }
       }
     }

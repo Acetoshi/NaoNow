@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { useTrams } from "../contexts/TramsProvider";
 
 import "../styles/SearchBar.css";
+import { useFavoriteStations } from "../contexts/FavoriteStationsProvider";
 
 function SearchBar() {
   const {
@@ -14,7 +15,7 @@ function SearchBar() {
     setPanelIsDisplayed,
   } = useTrams();
 
-  const favoriteStations = ["Commerce", "Gare Nord"];
+  const { favoriteStations } = useFavoriteStations();
 
   const [suggestionsIsVisible, setSuggestionsIsVisible] = useState(false);
 
@@ -86,9 +87,12 @@ function SearchBar() {
               <li key={favoriteStation}>
                 <button
                   type="button"
-                  onClick={() => setSearch(favoriteStation)}
+                  onClick={() => {
+                    setSearch(favoriteStation);
+                    setSuggestionsIsVisible(() => false);
+                  }}
                 >
-                  {favoriteStation}
+                  {`★ ${favoriteStation}`}
                 </button>
               </li>
             ))}
